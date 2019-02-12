@@ -1,12 +1,45 @@
 {
-  "name": "exampleprojectconfiguration",
+  "name": "app",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YeisonSanche16/App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YeisonSanche16/App/issues"
+  },
+  "homepage": "https://github.com/YeisonSanche16/App#readme",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-handlebars": "^5.0.2",
+    "gulp-handlebars-html": "0.0.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-regex-rename": "^0.1.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0"
-  }
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-useref": "^3.1.6",
+    "handlebars": "^4.1.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {}
 }
