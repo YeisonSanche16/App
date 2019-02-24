@@ -1,9 +1,14 @@
-const hello = (name) => {
-  return `hello ${name}`;
-};
-const odds = evens.map((v) => v + 1);
-const nums = evens.map((v, i) => v + i);
-setTimeout(() => {
-  console.log('ES2015 FTW');
-}, 1000);
-console.log('Hola');
+/* global components */
+const template = components.templates;
+
+class Button {
+  constructor(node, title, icon) {
+    this.node = node;
+    this.node.innerHtml = template({
+      title,
+      icon,
+    });
+  }
+}
+
+export default Button;
