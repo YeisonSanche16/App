@@ -31,12 +31,13 @@ gulp.task('css', () => gulp.src('app/**/*.scss')
   .pipe(gulp.dest('dist')));
 
 gulp.task('js', () => gulp.src('app/js/**/*.js')
-  .pipe(sourcemaps.init())
   .pipe(babel({
-    presets: ['@babel/env'],
+    presets: ['@babel/env',
+      {
+        targets: ['last 2 versions'],
+      }],
   }))
   .pipe(concat('all.js'))
-  .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('dist')));
 
 gulp.task('dev', () => {
